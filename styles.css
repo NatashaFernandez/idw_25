@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.822);
+    background-attachment: fixed;
+    color:aliceblue
+}
+#titulo{
+    text-align: center;
+    display: block;
+    margin: 20px;
+    font-weight: bold;
+}
+label, input{
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    color:rgb(36, 37, 37)
+}
+#contactar{
+    background-color: rgba(232, 238, 238, 0.863);
+    border-radius: 3px;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+    display: block;
+    margin: 50px auto;
+}
+#leyenda{
+    color: black;
+}
+footer{
+    text-align: center;
+}
