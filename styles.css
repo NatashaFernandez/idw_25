@@ -10,7 +10,9 @@ body {
 header, footer {
     font-family: Verdana, Tahoma, sans-serif;
     background-color: #0c0c0e;
-    color: white;
+
+    background-attachment: fixed;
+    color: aliceblue;
     text-align: center;
     padding: 1rem;
 }
@@ -30,5 +32,30 @@ nav a {
 
 main {
   padding: 2rem;
+}
+
+#titulo{
+    text-align: center;
+    display: block;
+    margin: 20px;
+    font-weight: bold;
+}
+label, input{
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    color:rgb(36, 37, 37)
+}
+#contactar{
+    background-color: rgba(232, 238, 238, 0.863);
+    border-radius: 3px;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+    display: block;
+    margin: 50px auto;
+}
+#leyenda{
+    color: black;
 }
 
