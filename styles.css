@@ -216,4 +216,15 @@ label, input{
     display: block;
   }
 }
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.subtitulo {
+  color: #f0938a;
+}
+main {
+  padding: 2rem;
+}
+
 
