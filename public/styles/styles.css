@@ -1,0 +1,89 @@
+body {
+    color: black;
+    background-color: #feeacf;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    
+    height: 100dvh;
+
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "main"
+      "footer";
+    grid-template-rows: auto 1fr auto;
+}
+
+header#app-bar {
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: #4c4066;
+    background-attachment: fixed;
+    color: aliceblue;
+    text-align: center;
+    grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: #4c4066;
+    background-attachment: fixed;
+    color: #f8e45f;
+    text-align: center;
+    padding: 1rem;
+    grid-area: footer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+}
+
+#titulo{
+    text-align: center;
+    display: block;
+    margin: 20px;
+    font-weight: bold;
+}
+label, input{
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    color:rgb(36, 37, 37)
+}
+#contactar{
+    background-color: #fcbb91;
+    border-radius: 3px;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+    display: block;
+    margin: 50px auto;
+}
+#leyenda{
+    color: black;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.subtitulo {
+  color: #f0938a;
+}
