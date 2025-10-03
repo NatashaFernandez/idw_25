@@ -62,9 +62,7 @@ main {
     font-weight: bold;
 }
 label, input{
-    text-align: center;
     display: block;
-    margin: 10px auto;
     color:rgb(36, 37, 37)
 }
 #contactar{
@@ -72,7 +70,6 @@ label, input{
     border-radius: 3px;
     padding: 10px;
     width: 30%;
-    text-align: center;
     display: block;
     margin: 50px auto;
 }
