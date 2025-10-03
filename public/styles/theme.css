@@ -1,0 +1,29 @@
+:root, [data-bs-theme="light"] {
+    --bs-primary: #bd0dfd;
+    --bs-primary-hover: #a10bd7;
+    --bs-primary-active: #970aca;
+    --bs-primary-subtle: #f2cfff;
+    --bs-primary-subtle-hover: #e8aafe;
+    --bs-primary-subtle-active: #e59efe;
+    --bs-primary-emphasis: #710898;
+    --bs-primary-emphasis-hover: #550672;
+    --bs-primary-border-subtle: #e59efe;
+    --bs-primary-rgb: 189, 13, 253;
+    --bs-text-on-primary: #ffffff;
+    --bs-border-radius: 0.705rem;
+    --bs-border-width: 1px;
+}
+
+[data-bs-theme="dark"] {
+    --bs-primary: #d462fe;
+    --bs-primary-hover: #dd81fe;
+    --bs-primary-active: #e191fe;
+    --bs-primary-subtle: #4c0565;
+    --bs-primary-subtle-hover: #550672;
+    --bs-primary-subtle-active: #710898;
+    --bs-primary-emphasis: #e192fe;
+    --bs-primary-emphasis-hover: #de86fe;
+    --bs-primary-border-subtle: #710898;
+    --bs-primary-rgb: 212, 98, 254;
+    --bs-text-on-primary: #000000;
+}

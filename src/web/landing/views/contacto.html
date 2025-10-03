@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> IDW S.A </title>
+    <!-- Tema Material Style CSS basado en Bootstrap  v5.3.2 -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@materialstyle/materialstyle@3.1.1/dist/css/materialstyle.min.css"
+        integrity="sha384-TveZ4SBMG9Zwu44Pq5aK2bgL+4CaFRTtx6pSSsxmQKWhIRKoONDSRW+k+NA9A0Gk" crossorigin="anonymous">
+    <!-- iconos de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Estilos propios -->
+    <link href="/public/styles/styles.css" rel="stylesheet">
+    <!-- Customizaciones de colores del bootstrap material desing -->
+    <link href="/public/styles/theme.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="app-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Clínica IDW</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-label="Menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="institucional.html">¿Quiénes somos?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <header id="titulo" class="mb-4">
+            <h1 class="mb-2">Contáctate con nosotros</h1>
+            <p class="lead">Dejanos tus datos, y a la brevedad nos contactaremos contigo.</p>
+        </header>
+        <form action="" id="contactar" class="mx-auto bg-white p-4 rounded shadow-sm" style="max-width: 500px; min-width: 350px; width: 100%;">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre y apellido" autocomplete="off" required>
+                <label for="nombre">Nombre y apellido</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" placeholder="example@gmail.com" autocomplete="off" required>
+                <label for="email">Correo electrónico</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="telefono" placeholder="Número de teléfono" autocomplete="off" required>
+                <label for="telefono">Número de teléfono</label>
+            </div>
+            <div class="d-grid gap-2 mb-2">
+                <button type="submit" class="btn btn-primary btn-lg ripple">Enviar</button>
+            </div>
+            <div>
+                <p id="leyenda" class="text-muted">O escríbenos a <strong>consultas@idw25.com</strong></p>
+            </div>
+        </form>
+    </main>
+
+    <footer class="bg-dark text-white p-3 text-center py-3">
+    <p class="mb-0">&copy; 2025 Clínica IDW - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <!-- MDC Ripple JS (Only for Ripple effects) -->
+    <script src="https://cdn.jsdelivr.net/npm/@material/ripple@14.0.0/dist/mdc.ripple.min.js"
+        integrity="sha384-9QANVmWxL3S8VRs8x1Q+bF1Zzogpy7P/Qw1+y5qHLdC1ig0EuoHg9VbB1SXyecdZ"
+        crossorigin="anonymous"></script>
+
+    <!-- Material Style JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@materialstyle/materialstyle@3.1.1/dist/js/materialstyle.min.js"
+        integrity="sha384-rqhP61M9WSmzd7+ssgyoWP2I+R68vVHx7o+UmmIs6/Nxe8Lt1DoF6+0CKptZIXC0"
+        crossorigin="anonymous"></script>
+
+    <!-- Javascript propio -->
+    <script src="/public/javascript/form.js"></script>
+</body>
+
+</html>
