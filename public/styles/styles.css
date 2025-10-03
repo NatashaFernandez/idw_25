@@ -1,27 +1,30 @@
 body {
-    color: black;
-    background-color: #feeacf;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    
-    height: 100dvh;
+  color: black;
+  background-color: light-dark(#feeacf, #4c4066);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 
-    display: grid;
-    grid-template-areas: 
-      "header"
-      "main"
-      "footer";
-    grid-template-rows: auto 1fr auto;
+  height: 100dvh;
+
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 3.6rem 1fr auto;
 }
 
-header#app-bar {
-    font-family: Verdana, Tahoma, sans-serif;
-    background-color: #4c4066;
-    background-attachment: fixed;
-    color: aliceblue;
-    text-align: center;
-    grid-area: header;
+header#app-bar nav {
+  grid-area: header;
+  text-align: center;
+  backdrop-filter: blur(16px);
+  background-color: var(--bg-termay-fluent);
+}
+
+.btn:not([class*=btn-outline-]):focus,
+.navbar-toggler:focus{
+  box-shadow: none !important;
 }
 
 main {
@@ -29,13 +32,37 @@ main {
 }
 
 footer {
-    font-family: Verdana, Tahoma, sans-serif;
-    background-color: #4c4066;
-    background-attachment: fixed;
-    color: #f8e45f;
-    text-align: center;
-    padding: 1rem;
-    grid-area: footer;
+  font-family: Verdana, Tahoma, sans-serif;
+  background-color: #4c4066;
+  background-attachment: fixed;
+  color: #f8e45f;
+  text-align: center;
+  padding: 1rem;
+  grid-area: footer;
+}
+
+/* CUSTOMIZE THE CAROUSEL 
+-------------------------------------------------- */
+/* Carousel base class */
+#hero.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+#hero .carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+#hero .carousel-item {
+  aspect-ratio: 16/9;
+}
+#hero .carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  aspect-ratio: 16/9;
 }
 
 nav ul {
@@ -46,35 +73,30 @@ nav ul {
   padding: 0;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
+#titulo {
+  text-align: center;
+  display: block;
+  margin: 20px;
+  font-weight: bold;
 }
 
-main {
-  padding: 2rem;
+label,
+input {
+  display: block;
+  color: rgb(36, 37, 37)
 }
 
-#titulo{
-    text-align: center;
-    display: block;
-    margin: 20px;
-    font-weight: bold;
+#contactar {
+  background-color: #fcbb91;
+  border-radius: 3px;
+  padding: 10px;
+  width: 30%;
+  display: block;
+  margin: 50px auto;
 }
-label, input{
-    display: block;
-    color:rgb(36, 37, 37)
-}
-#contactar{
-    background-color: #fcbb91;
-    border-radius: 3px;
-    padding: 10px;
-    width: 30%;
-    display: block;
-    margin: 50px auto;
-}
-#leyenda{
-    color: black;
+
+#leyenda {
+  color: black;
 }
 
 .object-fit-cover {
@@ -83,4 +105,16 @@ label, input{
 
 .subtitulo {
   color: #f0938a;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
 }
