@@ -3,35 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Contacto - IDW S.A.</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<nav id="menu">
-    <header>
-        <a href="index.html">Volver al inicio</a>
-    </header>
-</nav>
+    <header class="navbar">
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="menu-icon">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </label>
+    <nav class="nav-links">
+        <ul>
+            <li><a href="index.html">Volver al inicio</a></li>
+            <li><a href="institucional.html">¿Quiénes somos?</a></li>
+        </ul>
+    </nav>
+</header>
+
 <body>
     <div id="titulo">
         <h1>Contáctate con nosotros</h1>
-        <p>Dejanos tus datos y consultas, a la brevedad te responderemos.</p>
+        <p>Dejanos tus datos, y a la brevedad nos contactaremos contigo.</p>
     </div>
     <div id="contactar">
         <form action="">
-            <label for="">Nombre</label>
+            <label for="">Nombre y apellido</label>
             <input type="text" required>
             <label for="">Correo electrónico</label>
             <input type="email" placeholder="example@gmail.com" required>
             <label for="">Número de teléfono</label>
             <input type="number"required>
-            <label for="">Escribe tu consulta</label>
-            <input type="text">
             <button onclick="">Enviar</button>
-            <p id="leyenda">O mandanos un mail a <strong>consultas@idw25.com</strong></p>
+            <p id="leyenda">O escríbenos a <strong>consultas@idw25.com</strong></p>
         </form>
     </div>
 <footer>
     <p>IDW S.A. Todos los derechos reservados.</p>
 </footer>
 </body>
+
 </html>
