@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> IDW S.A </title>
+  <!-- Tema Material Style CSS basado en Bootstrap  v5.3.2 -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@materialstyle/materialstyle@3.1.1/dist/css/materialstyle.min.css"
+    integrity="sha384-TveZ4SBMG9Zwu44Pq5aK2bgL+4CaFRTtx6pSSsxmQKWhIRKoONDSRW+k+NA9A0Gk" crossorigin="anonymous">
+  <!-- Estilos propios -->
+  <link href="/public/styles/styles.css" rel="stylesheet">
+  <!-- Customizaciones de colores del bootstrap material desing -->
+  <link href="/public/styles/theme.css" rel="stylesheet">
+</head>
+
+<body>
+  <header id="app-bar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Clínica IDW</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu" aria-label="Menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="institucional.html">¿Quiénes somos?</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container p-5">
+    <section class="text-center mb-5">
+      <h1 class="mb-3">Sobre nosotros</h1>
+      <p class="lead">La Clínica IDW es un centro de salud integral con más de 25 años de trayectoria, reconocido por su
+        compromiso con la excelencia médica y la atención personalizada. Nuestro equipo de profesionales, altamente
+        capacitado en diversas especialidades, trabaja día a día para brindar soluciones de calidad que garanticen el
+        bienestar y la confianza de cada paciente.</p>
+    </section>
+
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img
+            src="https://images.unsplash.com/photo-1624727828489-a1e03b79bba8?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="img-fluid h-100 w-100 object-fit-cover rounded-start" alt="misión">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title subtitulo text-center fw-bold display-6">Misión</h5>
+            <p class="card-text text-center lead p-5">Nuestra misión es ofrecer servicios médicos de alta calidad,
+              accesibles y humanizados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="row g-0 align-items-center">
+        <div class="col-md-6 order-md-2">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="img-fluid h-100 w-100 object-fit-cover rounded-start" alt="visión">
+        </div>
+        <div class="col-md-6 order-md-1">
+          <div class="card-body">
+            <h5 class="card-title subtitulo text-center fw-bold display-6">Visión</h5>
+            <p class="card-text text-center lead p-3">Aspiramos a consolidarnos como un referente en salud en todo el
+              país, expandiendo nuestras clínicas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-5 mx-auto" style="max-width: 700px;">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1661281397737-9b5d75b52beb?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        class="img-fluid h-100 w-100 object-fit-cover rounded-start card-img-top" alt="valores">
+      <div class="card-body">
+        <h5 class="card-title subtitulo text-center fw-bold display-6">Valores</h5>
+        <ul class="text-start text-center lead p-5">
+          <li><b>Compromiso con el paciente:</b> bienestar y seguridad.</li>
+          <li><b>Calidad y excelencia:</b> mejora continua.</li>
+          <li><b>Ética y responsabilidad:</b> transparencia y respeto.</li>
+          <li><b>Innovación constante:</b> nuevas tecnologías.</li>
+          <li><b>Trabajo en equipo:</b> colaboración para mejores resultados.</li>
+          <li><b>Vínculo comunitario:</b> educación en salud y prevención.</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white p-3 text-center py-3">
+    <p>&copy; 2025 Clínica IDW - Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <!-- MDC Ripple JS (Only for Ripple effects) -->
+  <script src="https://cdn.jsdelivr.net/npm/@material/ripple@14.0.0/dist/mdc.ripple.min.js"
+    integrity="sha384-9QANVmWxL3S8VRs8x1Q+bF1Zzogpy7P/Qw1+y5qHLdC1ig0EuoHg9VbB1SXyecdZ"
+    crossorigin="anonymous"></script>
+
+  <!-- Material Style JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@materialstyle/materialstyle@3.1.1/dist/js/materialstyle.min.js"
+    integrity="sha384-rqhP61M9WSmzd7+ssgyoWP2I+R68vVHx7o+UmmIs6/Nxe8Lt1DoF6+0CKptZIXC0"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
