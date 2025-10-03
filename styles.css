@@ -1,18 +1,26 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
+    color: black;
+    background-color: #feeacf;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: linear-gradient(to right, #0e0e0e, #201f22);
 }
 
-header, footer {
+header {
     font-family: Verdana, Tahoma, sans-serif;
-    background-color: #0c0c0e;
-
+    background-color: #4c4066;
     background-attachment: fixed;
     color: aliceblue;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer {
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: #4c4066;
+    background-attachment: fixed;
+    color: #f8e45f;
     text-align: center;
     padding: 1rem;
 }
@@ -47,7 +55,7 @@ label, input{
     color:rgb(36, 37, 37)
 }
 #contactar{
-    background-color: rgba(232, 238, 238, 0.863);
+    background-color: #fcbb91;
     border-radius: 3px;
     padding: 10px;
     width: 30%;
@@ -59,3 +67,10 @@ label, input{
     color: black;
 }
 
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.subtitulo {
+  color: #f0938a;
+}
